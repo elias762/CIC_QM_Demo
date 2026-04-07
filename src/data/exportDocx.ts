@@ -3,7 +3,6 @@ import {
   Packer,
   Paragraph,
   TextRun,
-  HeadingLevel,
   AlignmentType,
   TableCell,
   TableRow,

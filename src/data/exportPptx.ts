@@ -187,7 +187,7 @@ export function exportToPptx(
     values: scores.map(s => s.percentage),
   }];
 
-  s3.addChart('bar' as pptxgen.ChartType, chartData as pptxgen.IOptsChartData[], {
+  s3.addChart('bar' as pptxgen.CHART_NAME, chartData as pptxgen.OptsChartData[], {
     x: PAD, y: BODY_Y, w: CONTENT_W, h: BODY_H,
     barDir: 'bar',
     showValue: true,
@@ -215,7 +215,7 @@ export function exportToPptx(
     values: scores.map(s => s.score),
   }];
 
-  s4.addChart('radar' as pptxgen.ChartType, radarData as pptxgen.IOptsChartData[], {
+  s4.addChart('radar' as pptxgen.CHART_NAME, radarData as pptxgen.OptsChartData[], {
     x: (W - 8) / 2, y: BODY_Y, w: 8, h: BODY_H,
     chartColors: [TEAL],
     showLegend: false,

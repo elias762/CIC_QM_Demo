@@ -209,7 +209,7 @@ export default function Slides({ answers, company }: SlidesProps) {
                   <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} tickFormatter={v => `${v}%`} />
                   <YAxis type="category" dataKey="name" tick={{ fontSize: 12 }} width={130} />
                   <Tooltip
-                    formatter={(value: number) => [`${value}%`, 'Bewertung']}
+                    formatter={(value) => [`${value}%`, 'Bewertung']}
                     contentStyle={{ borderRadius: 8, border: '1px solid #e2e6ec', fontSize: 13 }}
                   />
                   <Bar dataKey="value" radius={[0, 4, 4, 0]} barSize={22}>

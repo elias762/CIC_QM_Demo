@@ -261,7 +261,7 @@ export default function Report({ answers, company }: ReportProps) {
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e6ec" />
               <XAxis type="number" domain={[0, 100]} tick={{ fontSize: 11 }} tickFormatter={v => `${v}%`} />
               <YAxis type="category" dataKey="name" tick={{ fontSize: 11 }} width={130} />
-              <Tooltip formatter={(value: number) => [`${value}%`, 'Bewertung']} contentStyle={{ borderRadius: 8, border: '1px solid #e2e6ec' }} />
+              <Tooltip formatter={(value) => [`${value}%`, 'Bewertung']} contentStyle={{ borderRadius: 8, border: '1px solid #e2e6ec' }} />
               <Bar dataKey="value" radius={[0, 4, 4, 0]} barSize={22}>
                 {barData.map((entry, index) => <Cell key={index} fill={entry.color} />)}
               </Bar>
